@@ -1,0 +1,19 @@
+.sidebar{
+    background-color:#013243;
+    height: 100vh;
+}
+.margin{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+ /* .header nav{
+    background-color: black;
+    line-height: 40px;
+    font-size: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 5px;
+}  */
