@@ -12,8 +12,8 @@ const Header = () => {
     <Nav className="mr-auto">
       <Link to="/home" className="mx-2 text">Home</Link>
       <Link to="/order" className="mx-2 text">Order</Link>
-      <Link to="/admin" className="mx-2 text">Admin</Link>
       <Link to="/deals" className="mx-2 text">Deals</Link>
+      <Link to="/admin" className="mx-2 text">Admin</Link>
       <Link to="/login" className="mx-2 text">Login</Link>
 
     </Nav>
