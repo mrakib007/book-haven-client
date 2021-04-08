@@ -16,7 +16,7 @@ const Deals = () => {
             <div className="container my-5">
             <h3>You have {deals.length} purchases.</h3>
             {
-                deals.map(deal=> <li><strong>Book Name:</strong> {deal.name},Price: {deal.price}.</li>)
+                deals.map(deal=> <li><strong>Book Name:</strong> {deal.name},Price: {deal.price},Date: {deal.date}.</li>)
             }
             </div>
         </div>

@@ -20,7 +20,8 @@ const Order = () => {
     const orderData = {
       name: order.name,
       price: order.price,
-      email:email
+      email:email,
+      date: new Date().toDateString("dd/MM/yyyy")
     }
     const url = `http://localhost:5000/addOrder`;
     fetch(url,{
