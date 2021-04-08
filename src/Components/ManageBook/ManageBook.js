@@ -4,14 +4,14 @@ import { Button, Table } from "react-bootstrap";
 const ManageBook = () => {
   const [books, manageBooks] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/books")
+    fetch("https://dry-stream-47875.herokuapp.com/books")
       .then((res) => res.json())
       .then((data) => manageBooks(data));
   }, []);
 
   const handleDelete = (id) => {
     console.log(id);
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(`https://dry-stream-47875.herokuapp.com/delete/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

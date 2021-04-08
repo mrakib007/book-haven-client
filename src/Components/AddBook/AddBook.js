@@ -13,7 +13,7 @@ const AddBook = () => {
           quantity: data.quantity,
           imageUrl: imageUrl
       };
-    const url = `http://localhost:5000/addBook`;
+    const url = `https://dry-stream-47875.herokuapp.com/addBook`;
     console.log(bookData);
     fetch(url,{
         method: 'POST',

@@ -3,6 +3,9 @@ import { Button, Table } from "react-bootstrap";
 import { useHistory, useParams } from "react-router";
 import { UserContext } from "../../App";
 
+
+//Order details are showed in Deals page.
+
 const Order = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const { id } = useParams();
@@ -10,7 +13,7 @@ const Order = () => {
   const history = useHistory();
   
   useEffect(() => {
-    fetch(`http://localhost:5000/book/${id}`)
+    fetch(`https://dry-stream-47875.herokuapp.com/book/${id}`)
       .then((res) => res.json())
       .then((data) => setOrder(data[0]));
   }, [id]);
@@ -23,7 +26,7 @@ const Order = () => {
       email:email,
       date: new Date().toDateString("dd/MM/yyyy")
     }
-    const url = `http://localhost:5000/addOrder`;
+    const url = `https://dry-stream-47875.herokuapp.com/addOrder`;
     fetch(url,{
       method:'POST',
       headers: {
